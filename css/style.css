@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav h1 {
+  margin: 2px auto;
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-family: 'Rubik 80s Fade', cursive;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-image: url("../Images/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background: #000;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 15vh - 15vh);
+}
+
+.box {
+  animation: load 1s linear infinite forwards;
+  margin-top: 12px;
+  min-height: 399px;
+  background: #000;
+  min-width: 439px;
+  border-radius: 100%;
+}
+
+.box h1 {
+  text-align: center;
+  margin-top: 42px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-right: 12px;
+  font-size: 45px;
+}
+
+.container h1 {
+  color: white;
+}
+
+#date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  font-size: 50px;
+  color: red;
+}
+
+#date1 {
+  margin-left: -8px;
+  margin-top: 12px;
+  font-size: 25px;
+  color: red;
+  text-align: center;
+}
+
+#heading {
+  margin-top: 11px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+@keyframes load {
+  0% {
+    border: 2px solid white;
+  }
+
+  100% {
+    border: 2px solid red;
+  }
+}
+
+@media screen and (max-width: 1142px) {
+  .box{
+    width: 350px;
+  }
+  #time {
+    margin-bottom: -11px;
+    text-align: center;
+    overflow: hidden;
+    height: 52px;
+    width: 35vh;
+  }
+
+  #select {
+    margin-bottom: 5px;
+    padding: 6px;
+    margin-left: 14px;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .box{
+    min-width: 200px;
+  }
+}
